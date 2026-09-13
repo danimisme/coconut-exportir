@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { siteConfig, whatsappHref } from "@/lib/site-config";
 
@@ -33,15 +34,15 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         <a href="#hero" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-forest font-display font-bold text-lg group-hover:scale-110 transition-transform duration-300">
-            N
+          <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center p-1.5 group-hover:scale-110 transition-transform duration-300">
+            <Image src="/logo.png" alt={siteConfig.nameShort} width={32} height={32} className="w-full h-full object-contain" />
           </div>
           <div className="leading-none">
             <div className="font-display text-cream text-base font-semibold tracking-wide">
               {siteConfig.nameShort}
             </div>
             <div className="text-gold text-[9px] font-body font-medium tracking-[0.22em] uppercase">
-              Semi Husked Coconut Exporter
+              Coconut Exporter
             </div>
           </div>
         </a>

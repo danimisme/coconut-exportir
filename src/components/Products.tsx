@@ -7,14 +7,14 @@ import { whatsappHrefWithMessage } from "@/lib/site-config";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 const SPECS = [
-  { label: "Jenis Produk", value: "Semi Husked Coconut" },
-  { label: "Grade", value: "Ekspor (Grade A)" },
-  { label: "Ukuran", value: "Medium – Large" },
-  { label: "Kondisi", value: "Segar, kulit luar dikupas sebagian" },
-  { label: "Kemasan", value: "Jaring / Karung / Sesuai permintaan" },
-  { label: "Term Pengiriman", value: "CIF & FOB" },
-  { label: "Min. Order", value: "1 × Container 40-ft" },
-  { label: "Tujuan Ekspor", value: "China, Thailand, Vietnam & lainnya" },
+  { label: "Jenis Produk", value: "De Husked & Semi Husked Coconut" },
+  { label: "Grade A", value: "1000g – 2000+ g / butir" },
+  { label: "Grade B", value: "800g – 1000g / butir" },
+  { label: "Grade C", value: "500g – 800g / butir" },
+  { label: "Warna", value: "Golden Yellow & Light Brown (sesuai permintaan)" },
+  { label: "Kemasan", value: "20–30 butir / karung" },
+  { label: "MOQ 1×40FT", value: "28.000 butir" },
+  { label: "MOQ 1×20FT", value: "23.000 butir" },
 ];
 
 export default function Products() {
@@ -34,12 +34,12 @@ export default function Products() {
             custom={1}
             className="font-display text-5xl lg:text-6xl text-cream font-semibold leading-tight"
           >
-            Semi Husked
-            <em className="block italic font-light text-gold">Coconut</em>
+            De Husked &
+            <em className="block italic font-light text-gold">Semi Husked Coconut</em>
           </motion.h2>
           <motion.p variants={fadeUp} custom={2} className="mt-4 text-cream-dim font-body max-w-2xl mx-auto">
-            Kami fokus pada satu produk unggulan — semi husked coconut berkualitas tinggi yang
-            siap memenuhi kebutuhan importir di seluruh Asia dan dunia.
+            Kami menyediakan kelapa de husked dan semi husked berkualitas tinggi, tersedia
+            dalam 3 grade berat sesuai kebutuhan importir di seluruh Asia dan dunia.
           </motion.p>
         </RevealSection>
 
@@ -47,8 +47,8 @@ export default function Products() {
           <SlideFromLeft distance={150} className="space-y-4">
             <div className="relative h-80 rounded-2xl overflow-hidden bg-forest-light">
               <Image
-                src="https://images.unsplash.com/photo-1597636319015-1fce74db8798?w=800&h=600&fit=crop&auto=format"
-                alt="Semi husked coconut close-up"
+                src="/images/coconut-grading.jpg"
+                alt="Proses penimbangan dan grading kelapa"
                 fill
                 sizes="(min-width: 1024px) 560px, 100vw"
                 className="object-cover"
@@ -57,8 +57,8 @@ export default function Products() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-44 rounded-xl overflow-hidden bg-forest-light">
                 <Image
-                  src="https://images.unsplash.com/photo-1553787434-dd9eb4ea4d0b?w=400&h=300&fit=crop&auto=format"
-                  alt="Tumpukan kelapa semi husked"
+                    src="/images/split-coconut-2.jpg"
+                alt="Kelapa dibelah menunjukkan kualitas daging kelapa"
                   fill
                   sizes="280px"
                   className="object-cover"
@@ -66,8 +66,8 @@ export default function Products() {
               </div>
               <div className="relative h-44 rounded-xl overflow-hidden bg-forest-light">
                 <Image
-                  src="https://images.unsplash.com/photo-1560769680-ba2f3767c785?w=400&h=300&fit=crop&auto=format"
-                  alt="Kelapa siap ekspor"
+                  src="/images/coconut-pile-1.jpg"
+                  alt="Tumpukan kelapa siap ekspor"
                   fill
                   sizes="280px"
                   className="object-cover"
@@ -101,7 +101,7 @@ export default function Products() {
 
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <a
-                  href={whatsappHrefWithMessage("Halo, saya ingin tanya harga Semi Husked Coconut")}
+                  href={whatsappHrefWithMessage("Halo, saya ingin tanya harga De Husked / Semi Husked Coconut")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 py-4 rounded-xl bg-gold text-forest font-body font-bold text-sm hover:bg-gold-light transition-colors"

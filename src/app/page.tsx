@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import HorizontalGallery from "@/components/HorizontalGallery";
 import About from "@/components/About";
 import Products from "@/components/Products";
+import VideoShowcase from "@/components/VideoShowcase";
 import SpiralSection from "@/components/SpiralSection";
 import WhyUs from "@/components/WhyUs";
 import Process from "@/components/Process";
@@ -17,9 +18,10 @@ export default function Home() {
       <Header />
       <Hero />
       <div className="relative z-10 bg-forest">
+        <Products />
         <HorizontalGallery />
         <About />
-        <Products />
+        <VideoShowcase />
         <SpiralSection />
         <WhyUs />
         <Process />

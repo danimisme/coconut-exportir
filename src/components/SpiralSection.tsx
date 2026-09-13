@@ -8,36 +8,36 @@ const spiralCards = [
   {
     num: "01",
     title: "Sourcing Kebun",
-    desc: "Dipilih dari kebun mitra terpercaya di Sumatera Selatan dengan standar kematangan optimal.",
-    img: "https://images.unsplash.com/photo-1618478872836-f8efa847e8ab?w=500&h=360&fit=crop&auto=format",
+    desc: "Dipilih dari kebun mitra terpercaya di Deli Serdang, Sumatera Utara dengan standar kematangan optimal.",
+    img: "/images/coconut-pile-1.jpg",
     tag: "Origin",
   },
   {
     num: "02",
     title: "Proses Husking",
-    desc: "Sabut dikupas sebagian secara presisi — menghasilkan tampilan bersih dan konsisten di setiap butir.",
-    img: "https://images.unsplash.com/photo-1603779046675-2eccbab9b982?w=500&h=360&fit=crop&auto=format",
+    desc: "Sabut dikupas sesuai jenis produk (de husked / semi husked) secara presisi — menghasilkan tampilan bersih dan konsisten di setiap butir.",
+    img: "/images/coconut-pile-4.jpg",
     tag: "Process",
   },
   {
     num: "03",
     title: "Quality Control",
-    desc: "Setiap kelapa diseleksi ketat: ukuran, berat, kondisi sabut, dan kesegaran dievaluasi sebelum lolos.",
-    img: "https://images.unsplash.com/photo-1553787434-dd9eb4ea4d0b?w=500&h=360&fit=crop&auto=format",
+    desc: "Setiap kelapa ditimbang dan diseleksi ke Grade A, B, atau C berdasarkan berat, warna, dan kesegaran sebelum lolos.",
+    img: "/images/coconut-grading.jpg",
     tag: "Quality",
   },
   {
     num: "04",
     title: "Stuffing Container",
-    desc: "Dimuat ke dalam container 40-ft dengan teknik tata letak optimal untuk menjaga kualitas selama transit.",
-    img: "https://images.unsplash.com/photo-1560769680-ba2f3767c785?w=500&h=360&fit=crop&auto=format",
+    desc: "Dikemas 20–30 butir per karung, dimuat ke dalam container 40-ft/20-ft dengan tata letak optimal untuk menjaga kualitas selama transit.",
+    img: "/images/coconut-pile-5.jpg",
     tag: "Export",
   },
   {
     num: "05",
     title: "Pengiriman Global",
     desc: "Dari pelabuhan menuju China, Thailand, Vietnam — tepat waktu, dokumentasi lengkap.",
-    img: "https://images.unsplash.com/photo-1613365891889-7f7e3316be61?w=500&h=360&fit=crop&auto=format",
+    img: "/images/split-coconut-3.jpg",
     tag: "Global",
   },
 ];
@@ -126,8 +126,7 @@ export default function SpiralSection() {
       className="relative"
       style={{
         height: `${N * 100 + 100}vh`,
-        backgroundImage:
-          "url(https://images.unsplash.com/photo-1684384621034-76b5eff26948?w=1800&h=1200&fit=crop&auto=format)",
+        backgroundImage: "url(/images/coconut-pile-2.jpg)",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",

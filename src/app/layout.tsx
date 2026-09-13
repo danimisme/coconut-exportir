@@ -18,8 +18,8 @@ const outfit = Outfit({
 
 const siteUrl = "https://nusantarapasifiknasional.com";
 const siteName = siteConfig.name;
-const title = `${siteName} - Eksportir Semi Husked Coconut Berkualitas Premium`;
-const description = `${siteName} adalah eksportir semi husked coconut berkualitas premium dari Indonesia, siap kirim dalam container 40-ft dengan term CIF & FOB ke pasar internasional.`;
+const title = `${siteName} - Eksportir De Husked & Semi Husked Coconut`;
+const description = `${siteName} adalah eksportir de husked & semi husked coconut dari Sumatera Utara, Indonesia, tersedia dalam 3 grade berat, siap kirim dalam container 40-ft/20-ft dengan term CIF & FOB ke pasar internasional.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -30,9 +30,10 @@ export const metadata: Metadata = {
   description,
   keywords: [
     "eksportir kelapa",
+    "ekspor de husked coconut",
     "ekspor semi husked coconut",
     "coconut exporter Indonesia",
-    "semi husked coconut supplier",
+    "coconut exporter Sumatera Utara",
     "coconut supplier CIF FOB",
   ],
   authors: [{ name: siteName }],
@@ -46,13 +47,13 @@ export const metadata: Metadata = {
     siteName,
     title,
     description,
-    images: [{ url: "/images/semi-husked-closeup.png", width: 1200, height: 630, alt: siteName }],
+    images: [{ url: "/images/split-coconut-1.jpg", width: 1200, height: 630, alt: siteName }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/semi-husked-closeup.png"],
+    images: ["/images/split-coconut-1.jpg"],
   },
   robots: {
     index: true,

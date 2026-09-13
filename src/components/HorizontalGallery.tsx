@@ -5,30 +5,12 @@ import Image from "next/image";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const galleryImages = [
-  {
-    src: "https://images.unsplash.com/photo-1783112054020-68aaa816ac54?w=700&h=500&fit=crop&auto=format",
-    caption: "Perkebunan kelapa Sumatera",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1560769680-ba2f3767c785?w=700&h=500&fit=crop&auto=format",
-    caption: "Semi husked siap ekspor",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1533656274249-01a343657cea?w=700&h=500&fit=crop&auto=format",
-    caption: "Aerial kebun kelapa",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1684384621034-76b5eff26948?w=700&h=500&fit=crop&auto=format",
-    caption: "Jalan di antara pohon kelapa",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1597636319015-1fce74db8798?w=700&h=500&fit=crop&auto=format",
-    caption: "Kelapa grade ekspor",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1578570917593-fd1eb6a4556e?w=700&h=500&fit=crop&auto=format",
-    caption: "Pohon kelapa tropis",
-  },
+  { src: "/images/coconut-pile-1.jpg", caption: "Stok kelapa siap ekspor" },
+  { src: "/images/split-coconut-1.jpg", caption: "Kualitas daging kelapa premium" },
+  { src: "/images/coconut-grading.jpg", caption: "Penimbangan & grading per butir" },
+  { src: "/images/coconut-pile-4.jpg", caption: "Gudang penyimpanan kelapa" },
+  { src: "/images/split-coconut-2.jpg", caption: "Kelapa dibelah, grade ekspor" },
+  { src: "/images/coconut-pile-5.jpg", caption: "Kelapa siap dikemas" },
 ];
 
 const IMG_W = 480;

@@ -19,8 +19,8 @@ export default function Stats() {
     >
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1618478872836-f8efa847e8ab?w=1800&h=800&fit=crop&auto=format"
-          alt="Kebun kelapa luas"
+          src="/images/coconut-pile-3.jpg"
+          alt="Tumpukan kelapa siap ekspor"
           fill
           sizes="100vw"
           className="object-cover opacity-15"

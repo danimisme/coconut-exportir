@@ -4,7 +4,9 @@ export const siteConfig = {
   whatsapp: process.env.NEXT_PUBLIC_COMPANY_WHATSAPP ?? "+628116200964",
   whatsappDisplay: process.env.NEXT_PUBLIC_COMPANY_WHATSAPP_DISPLAY ?? "+62 811-6200-964",
   email: process.env.NEXT_PUBLIC_COMPANY_EMAIL ?? "info@nusantarapasifiknasional.com",
-  address: process.env.NEXT_PUBLIC_COMPANY_ADDRESS ?? "Palembang, Sumatera Selatan, Indonesia",
+  address:
+    process.env.NEXT_PUBLIC_COMPANY_ADDRESS ??
+    "Jalan Makmur No.88T, Komplek Cemara Asri, Medan Estate, Percut Sei Tuan, Kab Deli Serdang, Sumatera Utara",
 };
 
 export const whatsappDigits = siteConfig.whatsapp.replace(/[^\d]/g, "");

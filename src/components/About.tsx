@@ -23,8 +23,8 @@ export default function About() {
           <SlideFromLeft distance={160} className="relative">
             <div className="relative h-130 rounded-2xl overflow-hidden bg-forest-light">
               <Image
-                src="https://images.unsplash.com/photo-1560769680-ba2f3767c785?w=800&h=1000&fit=crop&auto=format"
-                alt="Semi husked coconut produk ekspor"
+                src="/images/split-coconut-1.jpg"
+                alt="Kelapa dibelah menunjukkan kualitas daging kelapa"
                 fill
                 sizes="(min-width: 1024px) 560px, 100vw"
                 className="object-cover"
@@ -53,8 +53,8 @@ export default function About() {
               className="absolute -top-8 -left-6 w-44 h-44 rounded-xl overflow-hidden border-4 border-forest shadow-xl bg-forest-light"
             >
               <Image
-                src="https://images.unsplash.com/photo-1603779046675-2eccbab9b982?w=300&h=300&fit=crop&auto=format"
-                alt="Kelapa segar langsung dari kebun"
+                src="/images/coconut-grading.jpg"
+                alt="Proses penimbangan dan grading kelapa"
                 fill
                 sizes="176px"
                 className="object-cover"
@@ -73,9 +73,9 @@ export default function About() {
               <em className="block italic font-light text-gold">Standar Ekspor Global</em>
             </h2>
             <p className="font-body text-cream-dim text-lg leading-relaxed mb-5">
-              <strong className="text-cream">{siteConfig.name}</strong> adalah eksportir semi
-              husked coconut berbasis di {siteConfig.address}, dengan jaringan sourcing langsung
-              dari kebun-kebun kelapa terbaik di Sumatera dan sekitarnya.
+              <strong className="text-cream">{siteConfig.name}</strong> adalah eksportir de
+              husked & semi husked coconut berbasis di Deli Serdang, Sumatera Utara, dengan
+              jaringan sourcing langsung dari kebun-kebun kelapa terbaik di kawasan tersebut.
             </p>
             <p className="font-body text-cream-dim leading-relaxed mb-5">
               Kami memahami bahwa importir membutuhkan lebih dari sekadar produk — mereka

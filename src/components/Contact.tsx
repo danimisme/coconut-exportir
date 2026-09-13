@@ -51,7 +51,7 @@ export default function Contact() {
             className="font-display text-5xl lg:text-6xl text-cream font-semibold leading-tight mb-4"
           >
             Siap Mengimpor
-            <em className="block italic font-light text-gold">Semi Husked Coconut?</em>
+            <em className="block italic font-light text-gold">Kelapa Kualitas Ekspor?</em>
           </motion.h2>
           <motion.p variants={fadeUp} custom={2} className="text-cream-dim font-body mb-4">
             Isi form di bawah dan kami akan menghubungi Anda via WhatsApp dalam waktu singkat.

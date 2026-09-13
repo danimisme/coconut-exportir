@@ -18,8 +18,7 @@ export default function Hero() {
       style={{
         position: "sticky",
         top: 0,
-        backgroundImage:
-          "url(https://images.unsplash.com/photo-1684384621034-76b5eff26948?w=1800&h=1200&fit=crop&auto=format)",
+        backgroundImage: "url(/images/coconut-pile-2.jpg)",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -38,7 +37,7 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 0.3 }}
           className="text-gold font-body text-xs font-medium tracking-[0.35em] uppercase mb-6"
         >
-          Eksportir Semi Husked Coconut — {siteConfig.address}
+          Eksportir Kelapa — Sumatera Utara, Indonesia
         </motion.div>
 
         <motion.h1
@@ -47,9 +46,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-6xl md:text-8xl lg:text-[96px] text-cream leading-[0.9] font-semibold max-w-5xl"
         >
-          Semi Husked
-          <em className="block text-gold italic font-light">Coconut</em>
-          Unggulan
+          De Husked &
+          <em className="block text-gold italic font-light">Semi Husked</em>
+          Coconut
         </motion.h1>
 
         <motion.p
@@ -58,9 +57,9 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.85 }}
           className="mt-8 text-cream-dim font-body text-lg max-w-2xl leading-relaxed"
         >
-          {siteConfig.name} — menyuplai semi husked coconut grade ekspor ke China, Thailand,
-          Vietnam dan pasar global dengan kualitas premium, harga kompetitif, dan pengiriman
-          tepat waktu via container 40-ft.
+          {siteConfig.name} — menyuplai de husked & semi husked coconut grade ekspor (Grade A,
+          B, C) ke China, Thailand, Vietnam dan pasar global dengan kualitas premium, harga
+          kompetitif, dan pengiriman tepat waktu via container 40-ft.
         </motion.p>
 
         <motion.div
@@ -70,7 +69,7 @@ export default function Hero() {
           className="mt-10 flex flex-col sm:flex-row gap-4"
         >
           <a
-            href={whatsappHrefWithMessage("Halo, saya ingin informasi harga Semi Husked Coconut")}
+            href={whatsappHrefWithMessage("Halo, saya ingin informasi harga De Husked / Semi Husked Coconut")}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 rounded-full bg-gold text-forest font-body font-semibold text-sm tracking-wide hover:bg-gold-light transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/30 flex items-center gap-2 justify-center"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig, whatsappHref } from "@/lib/site-config";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -16,8 +17,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-full bg-gold flex items-center justify-center text-forest font-display font-bold">
-                N
+              <div className="w-9 h-9 rounded-full bg-cream flex items-center justify-center p-1">
+                <Image src="/logo.png" alt={siteConfig.nameShort} width={28} height={28} className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="font-display text-cream font-semibold text-sm">{siteConfig.nameShort}</div>
@@ -25,7 +26,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-cream-dim/60 font-body text-sm leading-relaxed">
-              Eksportir Semi Husked Coconut terpercaya dari {siteConfig.address}. Kualitas
+              Eksportir De Husked & Semi Husked Coconut terpercaya dari Sumatera Utara. Kualitas
               premium, pengiriman profesional.
             </p>
           </div>
@@ -79,7 +80,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {siteConfig.name}. Hak cipta dilindungi.
           </p>
           <p className="text-cream-dim/30 font-body text-xs">
-            Semi Husked Coconut Exporter — {siteConfig.address}
+            De Husked & Semi Husked Coconut Exporter — Sumatera Utara, Indonesia
           </p>
         </div>
       </div>
