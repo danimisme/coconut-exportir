@@ -9,7 +9,6 @@ const spiralCards = [
     num: "01",
     title: "Farm Sourcing",
     desc: "Selected from trusted partner farms in Deli Serdang, North Sumatra, with optimal ripeness standards.",
-    // img: "/images/coconut-pile-1.jpg",
     img: "/images/coconut-pile.jpg",
 
     tag: "Origin",
@@ -18,7 +17,6 @@ const spiralCards = [
     num: "02",
     title: "Husking Process",
     desc: "Husk removed to match the product type (de husked / semi husked) with precision — resulting in a clean, consistent look for every nut.",
-    // img: "/images/coconut-pile-4.jpg",
     img: "/images/coconut-pile-1.jpg",
 
     tag: "Process",
@@ -124,10 +122,10 @@ export default function SpiralSection() {
   }, [N]);
 
   return (
+    <div id="alur-ekspor" className="scroll-mt-24">
     <section
       ref={sectionRef}
-      id="alur-ekspor"
-      className="relative"
+      className="relative hidden lg:block"
       style={{
         height: `${N * 100 + 100}vh`,
         backgroundImage:
@@ -253,6 +251,40 @@ export default function SpiralSection() {
         </div>
       </div>
     </section>
+
+    {/* Mobile fallback: simple stacked list, no pinning/3D — keeps the same dark "export journey" moment without the desktop-only pinned interaction */}
+    <div className="lg:hidden bg-[#0a1f0f] px-6 py-20">
+      <p className="text-[#c9a84c] font-body text-xs font-medium tracking-[0.3em] uppercase mb-2">
+        Export Journey
+      </p>
+      <h2 className="font-display text-4xl text-[#f5efe3] font-semibold mb-10">
+        From Our Farm <em className="italic font-light text-[#c9a84c]">to Your Port</em>
+      </h2>
+      <div className="space-y-6">
+        {spiralCards.map((card, i) => (
+          <div key={card.num} className="rounded-2xl overflow-hidden border border-[#2d6a3f]/40 bg-[#122b19]">
+            <div className="relative h-48">
+              <Image src={card.img} alt={card.title} fill sizes="100vw" className="object-cover" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#060f08]/70 to-transparent" />
+              <span className="absolute top-3 right-3 font-display text-[#f5efe3]/20 text-3xl font-bold leading-none select-none">
+                {card.num}
+              </span>
+            </div>
+            <div className="p-6">
+              <span className="inline-block px-3 py-1 rounded-full border border-[#c9a84c]/40 bg-[#c9a84c]/10 text-[#c9a84c] font-body text-[10px] tracking-[0.25em] uppercase mb-3">
+                {card.tag}
+              </span>
+              <h3 className="font-display text-xl text-[#f5efe3] font-semibold mb-2">{card.title}</h3>
+              <p className="font-body text-[#f5efe3]/70 text-sm leading-relaxed">{card.desc}</p>
+              <p className="font-body text-[#f5efe3]/25 text-[10px] tracking-[0.3em] uppercase mt-4">
+                {String(i + 1).padStart(2, "0")} / {String(N).padStart(2, "0")}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    </div>
   );
 }
 
