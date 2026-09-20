@@ -18,8 +18,8 @@ const outfit = Outfit({
 
 const siteUrl = "https://nusantarapasifiknasional.com";
 const siteName = siteConfig.name;
-const title = `${siteName} - Eksportir De Husked & Semi Husked Coconut`;
-const description = `${siteName} adalah eksportir de husked & semi husked coconut dari Sumatera Utara, Indonesia, tersedia dalam 3 grade berat, siap kirim dalam container 40-ft/20-ft dengan term CIF & FOB ke pasar internasional.`;
+const title = `${siteName} - De Husked & Semi Husked Coconut Exporter`;
+const description = `${siteName} is a de husked & semi husked coconut exporter from North Sumatra, Indonesia, available in 3 weight grades, ready to ship in 40-ft/20-ft containers with CIF & FOB terms to international markets.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
-    "eksportir kelapa",
-    "ekspor de husked coconut",
-    "ekspor semi husked coconut",
+    "coconut exporter",
+    "de husked coconut export",
+    "semi husked coconut export",
     "coconut exporter Indonesia",
-    "coconut exporter Sumatera Utara",
+    "coconut exporter North Sumatra",
     "coconut supplier CIF FOB",
   ],
   authors: [{ name: siteName }],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "id_ID",
+    locale: "en_US",
     url: siteUrl,
     siteName,
     title,
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="id"
+      lang="en"
       className={`${fraunces.variable} ${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

@@ -9,16 +9,16 @@ export const destinations = [
   "Malaysia 🇲🇾",
   "Bangladesh 🇧🇩",
   "India 🇮🇳",
-  "Timur Tengah 🕌",
-  "Singapura 🇸🇬",
+  "Middle East 🕌",
+  "Singapore 🇸🇬",
 ];
 
 export default function Destinations() {
   return (
     <section className="bg-forest-mid py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-10 text-center">
-        <span className="text-cream-dim/60 font-body text-xs tracking-[0.3em] uppercase">
-          Target Pasar Ekspor
+        <span className="text-cream-dim font-body text-xs tracking-[0.3em] uppercase">
+          Target Export Markets
         </span>
       </div>
       <div className="flex gap-10 overflow-hidden">
@@ -30,7 +30,7 @@ export default function Destinations() {
           {[...destinations, ...destinations].map((name, i) => (
             <div
               key={i}
-              className="shrink-0 px-7 py-3 rounded-full border border-leaf/60 text-cream-dim/70 font-body text-sm font-medium whitespace-nowrap hover:border-gold/40 hover:text-gold transition-colors duration-300 cursor-default"
+              className="shrink-0 px-7 py-3 rounded-full border border-leaf/60 text-cream-dim font-body text-sm font-medium whitespace-nowrap hover:border-gold/40 hover:text-gold transition-colors duration-300 cursor-default"
             >
               {name}
             </div>

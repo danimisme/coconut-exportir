@@ -1,12 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import HorizontalGallery from "@/components/HorizontalGallery";
 import About from "@/components/About";
-import Products from "@/components/Products";
+import HorizontalGallery from "@/components/HorizontalGallery";
 import VideoShowcase from "@/components/VideoShowcase";
 import SpiralSection from "@/components/SpiralSection";
+import Products from "@/components/Products";
 import WhyUs from "@/components/WhyUs";
-import Process from "@/components/Process";
 import Stats from "@/components/Stats";
 import Destinations from "@/components/Destinations";
 import Contact from "@/components/Contact";
@@ -18,13 +17,12 @@ export default function Home() {
       <Header />
       <Hero />
       <div className="relative z-10 bg-forest">
+        <About />
         <Products />
         <HorizontalGallery />
-        <About />
         <VideoShowcase />
         <SpiralSection />
         <WhyUs />
-        <Process />
         <Stats />
         <Destinations />
         <Contact />

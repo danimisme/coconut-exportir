@@ -18,14 +18,16 @@ export default function Hero() {
       style={{
         position: "sticky",
         top: 0,
-        backgroundImage: "url(/images/coconut-pile-2.jpg)",
+        backgroundImage:
+          // "url(https://images.unsplash.com/photo-1560769680-ba2f3767c785?w=1800&h=1200&fit=crop&auto=format)",
+          "url(images/bg.jpeg)",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
         zIndex: 0,
       }}
     >
-      <div className="absolute inset-0 bg-linear-to-b from-forest/65 via-forest/35 to-forest" />
+      <div className="absolute inset-0 bg-linear-to-b from-forest/70 via-forest/40 to-forest" />
 
       <motion.div
         style={{ opacity }}
@@ -37,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 0.3 }}
           className="text-gold font-body text-xs font-medium tracking-[0.35em] uppercase mb-6"
         >
-          Eksportir Kelapa — Sumatera Utara, Indonesia
+          Coconut Exporter — North Sumatra, Indonesia
         </motion.div>
 
         <motion.h1
@@ -57,9 +59,9 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.85 }}
           className="mt-8 text-cream-dim font-body text-lg max-w-2xl leading-relaxed"
         >
-          {siteConfig.name} — menyuplai de husked & semi husked coconut grade ekspor (Grade A,
-          B, C) ke China, Thailand, Vietnam dan pasar global dengan kualitas premium, harga
-          kompetitif, dan pengiriman tepat waktu via container 40-ft.
+          {siteConfig.name} supplies export-grade de husked & semi husked coconut
+          from North Sumatra, Indonesia — trusted by buyers in China, Thailand, and Vietnam, with premium
+          quality and on-time delivery.
         </motion.p>
 
         <motion.div
@@ -69,10 +71,10 @@ export default function Hero() {
           className="mt-10 flex flex-col sm:flex-row gap-4"
         >
           <a
-            href={whatsappHrefWithMessage("Halo, saya ingin informasi harga De Husked / Semi Husked Coconut")}
+            href={whatsappHrefWithMessage("Hello, I'd like pricing information for De Husked / Semi Husked Coconut")}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 rounded-full bg-gold text-forest font-body font-semibold text-sm tracking-wide hover:bg-gold-light transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/30 flex items-center gap-2 justify-center"
+            className="px-8 py-4 rounded-full bg-gold text-white font-body font-semibold text-sm tracking-wide hover:bg-gold-light transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/30 flex items-center gap-2 justify-center"
           >
             <WhatsAppIcon className="w-4 h-4" />
             Chat WhatsApp
@@ -81,7 +83,7 @@ export default function Hero() {
             href="#produk"
             className="px-8 py-4 rounded-full border border-cream/40 text-cream font-body font-medium text-sm tracking-wide hover:border-cream transition-all duration-300"
           >
-            Lihat Detail Produk
+            View Product Details
           </a>
         </motion.div>
       </motion.div>

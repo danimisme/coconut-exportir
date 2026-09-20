@@ -5,12 +5,11 @@ import Image from "next/image";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const galleryImages = [
-  { src: "/images/coconut-pile-1.jpg", caption: "Stok kelapa siap ekspor" },
-  { src: "/images/split-coconut-1.jpg", caption: "Kualitas daging kelapa premium" },
-  { src: "/images/coconut-grading.jpg", caption: "Penimbangan & grading per butir" },
-  { src: "/images/coconut-pile-4.jpg", caption: "Gudang penyimpanan kelapa" },
-  { src: "/images/split-coconut-2.jpg", caption: "Kelapa dibelah, grade ekspor" },
-  { src: "/images/coconut-pile-5.jpg", caption: "Kelapa siap dikemas" },
+  { src: "/images/coconut-pile-1.jpg", caption: "Coconut stock ready for export" },
+  { src: "/images/split-coconut-1.jpg", caption: "Premium coconut flesh quality" },
+  { src: "/images/coconut-grading.jpg", caption: "Weighing & grading per nut" },
+  { src: "/images/split-coconut-2.jpg", caption: "Every nut inspected before shipping" },
+  { src: "/images/whole-sale-coconuts.png", caption: "Neatly packed, 20–30 nuts per sack" },
 ];
 
 const IMG_W = 480;
@@ -60,7 +59,7 @@ export default function HorizontalGallery() {
   return (
     <section
       ref={outerRef}
-      className="relative bg-[#060f08]"
+      className="relative bg-forest"
       style={{ height: `${sectionH}vh` }}
     >
       <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
@@ -68,18 +67,18 @@ export default function HorizontalGallery() {
           aria-hidden
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(28,66,38,0.3), transparent 70%)",
+            background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(138,95,31,0.15), transparent 70%)",
           }}
         />
 
         <div className="px-10 mb-10 relative z-10">
           <p className="text-gold font-body text-[10px] font-medium tracking-[0.35em] uppercase mb-2">
-            Dari Produk Kami
+            From Our Products
           </p>
           <div className="flex items-end justify-between">
             <h2 className="font-display text-5xl md:text-6xl text-cream font-semibold leading-none">
-              Langsung dari
-              <em className="block italic font-light text-gold">Sumbernya</em>
+              See For Yourself
+              <em className="block italic font-light text-gold">The Proof</em>
             </h2>
             <span className="font-display text-[80px] font-bold text-cream/6 leading-none select-none hidden md:block">
               {String(Math.min(galleryImages.length, Math.ceil((pct / 100) * galleryImages.length) + 1)).padStart(2, "0")}
@@ -106,11 +105,11 @@ export default function HorizontalGallery() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-[#060f08]/85 via-[#060f08]/10 to-transparent" />
-                  <span className="absolute top-5 left-5 font-display text-5xl font-bold text-cream/10 leading-none select-none">
+                  <span className="absolute top-5 left-5 font-display text-5xl font-bold text-[#f5efe3]/10 leading-none select-none">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="absolute bottom-0 left-0 right-0 p-5">
-                    <p className="font-body text-cream text-sm font-medium">{img.caption}</p>
+                    <p className="font-body text-[#f5efe3] text-sm font-medium">{img.caption}</p>
                   </div>
                   <motion.div
                     className="absolute bottom-0 left-0 h-0.5 bg-gold"

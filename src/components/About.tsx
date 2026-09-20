@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 import { SlideFromLeft, SlideFromRight } from "@/lib/motion";
 import { siteConfig } from "@/lib/site-config";
 
-const TAGS = ["CIF & FOB Terms", "Dokumentasi Lengkap", "Container 40-ft", "Grade Ekspor"];
+const TAGS = ["CIF & FOB Terms", "Full Documentation", "40-ft Container", "Export Grade"];
 
 export default function About() {
   return (
     <section
       id="tentang-kami"
-      className="relative bg-forest min-h-screen flex flex-col justify-center py-20 overflow-hidden"
+      className="relative bg-forest scroll-mt-24 min-h-screen flex flex-col justify-center py-20 overflow-hidden"
     >
       <div
         aria-hidden
@@ -24,7 +24,7 @@ export default function About() {
             <div className="relative h-130 rounded-2xl overflow-hidden bg-forest-light">
               <Image
                 src="/images/split-coconut-1.jpg"
-                alt="Kelapa dibelah menunjukkan kualitas daging kelapa"
+                alt="Split coconut showing flesh quality"
                 fill
                 sizes="(min-width: 1024px) 560px, 100vw"
                 className="object-cover"
@@ -37,11 +37,11 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="absolute -bottom-8 -right-6 bg-gold text-forest rounded-2xl p-6 shadow-xl"
+              className="absolute -bottom-8 -right-6 bg-gold text-white rounded-2xl p-6 shadow-xl"
             >
-              <div className="font-display text-4xl font-bold leading-none">40-ft</div>
+              <div className="font-display text-xl font-bold leading-none">Pure Quality,</div>
               <div className="font-body text-xs font-semibold tracking-wide mt-1 uppercase">
-                Container Siap Kirim
+                Globally Trusted
               </div>
             </motion.div>
 
@@ -50,11 +50,11 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="absolute -top-8 -left-6 w-44 h-44 rounded-xl overflow-hidden border-4 border-forest shadow-xl bg-forest-light"
+              className="absolute -top-8 -left-6 w-44 h-44 rounded-xl overflow-hidden border-4 border-white shadow-xl bg-forest-light"
             >
               <Image
-                src="/images/coconut-grading.jpg"
-                alt="Proses penimbangan dan grading kelapa"
+                src="/images/coconut-pile-1.jpg"
+                alt="Coconut pile"
                 fill
                 sizes="176px"
                 className="object-cover"
@@ -64,28 +64,18 @@ export default function About() {
 
           <SlideFromRight distance={160}>
             <div className="mb-3">
-              <span className="text-gold font-body text-xs font-medium tracking-[0.3em] uppercase">
-                Tentang Kami
+              <span className="text-gold font-body text-lg font-medium tracking-[0.3em] uppercase">
+                About Us
               </span>
             </div>
-            <h2 className="font-display text-5xl lg:text-6xl text-cream font-semibold leading-[1.05] mb-6">
-              Sourcing Terpercaya,
-              <em className="block italic font-light text-gold">Standar Ekspor Global</em>
-            </h2>
             <p className="font-body text-cream-dim text-lg leading-relaxed mb-5">
-              <strong className="text-cream">{siteConfig.name}</strong> adalah eksportir de
-              husked & semi husked coconut berbasis di Deli Serdang, Sumatera Utara, dengan
-              jaringan sourcing langsung dari kebun-kebun kelapa terbaik di kawasan tersebut.
+              <strong className="text-cream">{siteConfig.name}</strong> is a de husked & semi husked coconut exporter based in Deli Serdang, North Sumatra — sourcing directly from the best coconut farms in the region.
             </p>
             <p className="font-body text-cream-dim leading-relaxed mb-5">
-              Kami memahami bahwa importir membutuhkan lebih dari sekadar produk — mereka
-              membutuhkan mitra yang andal. Setiap pengiriman kami didukung oleh dokumentasi
-              ekspor lengkap, logistik profesional, dan komunikasi yang transparan dari awal
-              hingga barang tiba di tangan Anda.
+              At our warehouse, incoming coconuts aren&apos;t packed right away. We weigh every single nut, log the date, then sort it into Grade A, B, or C based on the number on paper — not a guess. This simple practice is why our buyers in China, Thailand, and Vietnam know exactly what they&apos;re getting, in every container.
             </p>
             <p className="font-body text-cream-dim leading-relaxed mb-10">
-              Produk kami menjangkau pasar Asia, termasuk China, Thailand, dan Vietnam — dengan
-              komitmen pengiriman tepat waktu dan kualitas yang konsisten di setiap kontainer.
+              Every shipment is backed by complete export documentation, professional logistics, and transparent communication — from our farms to your port of destination.
             </p>
 
             <div className="flex flex-wrap gap-4">

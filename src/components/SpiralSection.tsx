@@ -7,36 +7,40 @@ import { motion, useScroll } from "framer-motion";
 const spiralCards = [
   {
     num: "01",
-    title: "Sourcing Kebun",
-    desc: "Dipilih dari kebun mitra terpercaya di Deli Serdang, Sumatera Utara dengan standar kematangan optimal.",
-    img: "/images/coconut-pile-1.jpg",
+    title: "Farm Sourcing",
+    desc: "Selected from trusted partner farms in Deli Serdang, North Sumatra, with optimal ripeness standards.",
+    // img: "/images/coconut-pile-1.jpg",
+    img: "/images/coconut-pile.jpg",
+
     tag: "Origin",
   },
   {
     num: "02",
-    title: "Proses Husking",
-    desc: "Sabut dikupas sesuai jenis produk (de husked / semi husked) secara presisi — menghasilkan tampilan bersih dan konsisten di setiap butir.",
-    img: "/images/coconut-pile-4.jpg",
+    title: "Husking Process",
+    desc: "Husk removed to match the product type (de husked / semi husked) with precision — resulting in a clean, consistent look for every nut.",
+    // img: "/images/coconut-pile-4.jpg",
+    img: "/images/coconut-pile-1.jpg",
+
     tag: "Process",
   },
   {
     num: "03",
     title: "Quality Control",
-    desc: "Setiap kelapa ditimbang dan diseleksi ke Grade A, B, atau C berdasarkan berat, warna, dan kesegaran sebelum lolos.",
+    desc: "Every coconut is weighed and sorted into Grade A, B, or C based on weight, color, and freshness before passing.",
     img: "/images/coconut-grading.jpg",
     tag: "Quality",
   },
   {
     num: "04",
-    title: "Stuffing Container",
-    desc: "Dikemas 20–30 butir per karung, dimuat ke dalam container 40-ft/20-ft dengan tata letak optimal untuk menjaga kualitas selama transit.",
-    img: "/images/coconut-pile-5.jpg",
+    title: "Container Stuffing",
+    desc: "Packed 20–30 nuts per sack, loaded into 40-ft/20-ft containers with optimal layout to preserve quality during transit.",
+    img: "/images/whole-sale-coconuts.png",
     tag: "Export",
   },
   {
     num: "05",
-    title: "Pengiriman Global",
-    desc: "Dari pelabuhan menuju China, Thailand, Vietnam — tepat waktu, dokumentasi lengkap.",
+    title: "Global Shipping",
+    desc: "From our port, containers sail to regional buyers — accompanied by complete export documentation from start to finish.",
     img: "/images/split-coconut-3.jpg",
     tag: "Global",
   },
@@ -126,7 +130,8 @@ export default function SpiralSection() {
       className="relative"
       style={{
         height: `${N * 100 + 100}vh`,
-        backgroundImage: "url(/images/coconut-pile-2.jpg)",
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1597636319015-1fce74db8798?w=1800&h=1200&fit=crop&auto=format)",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -161,15 +166,15 @@ export default function SpiralSection() {
               >
                 {card.num}
               </span>
-              <span className="inline-block px-3 py-1 rounded-full border border-gold/40 bg-gold/10 text-gold font-body text-[10px] tracking-[0.25em] uppercase mb-5">
+              <span className="inline-block px-3 py-1 rounded-full border border-[#c9a84c]/40 bg-[#c9a84c]/10 text-[#c9a84c] font-body text-[10px] tracking-[0.25em] uppercase mb-5">
                 {card.tag}
               </span>
-              <h3 className="font-display text-3xl text-cream font-semibold leading-tight mb-4">
+              <h3 className="font-display text-3xl text-[#f5efe3] font-semibold leading-tight mb-4">
                 {card.title}
               </h3>
-              <div className="w-10 h-px bg-gold mb-4" />
-              <p className="font-body text-cream-dim/70 text-sm leading-relaxed">{card.desc}</p>
-              <p className="font-body text-cream-dim/25 text-[10px] tracking-[0.3em] uppercase mt-6">
+              <div className="w-10 h-px bg-[#c9a84c] mb-4" />
+              <p className="font-body text-[#f5efe3]/70 text-sm leading-relaxed">{card.desc}</p>
+              <p className="font-body text-[#f5efe3]/25 text-[10px] tracking-[0.3em] uppercase mt-6">
                 {String(i + 1).padStart(2, "0")} / {String(N).padStart(2, "0")}
               </p>
             </div>
@@ -187,12 +192,12 @@ export default function SpiralSection() {
         }}
       >
         <div className="absolute z-30 text-right" style={{ top: 96, right: 48 }}>
-          <span className="text-gold font-body text-[10px] tracking-[0.35em] uppercase block mb-2">
-            Alur Ekspor — Scroll ↓
+          <span className="text-[#c9a84c] font-body text-[10px] tracking-[0.35em] uppercase block mb-2">
+            Export Journey — Scroll ↓
           </span>
-          <h2 className="font-display text-4xl text-cream font-semibold">
-            Proses
-            <em className="italic font-light text-gold"> Spiral</em>
+          <h2 className="font-display text-4xl text-[#f5efe3] font-semibold">
+            From Our Farm
+            <em className="italic font-light text-[#c9a84c]"> to Your Port</em>
           </h2>
         </div>
 
@@ -288,7 +293,7 @@ function HelixCard({
         className="rounded-2xl overflow-hidden"
         style={{
           background:
-            hovered || isActive ? "linear-gradient(145deg,#1c4226,#122b19)" : "linear-gradient(145deg,#122b19,#0a1606)",
+            hovered || isActive ? "linear-gradient(145deg,#1c4226,#122b19)" : "linear-gradient(145deg,#122b19,#060f08)",
           border: hovered || isActive ? "1.5px solid #c9a84c" : "1px solid rgba(45,106,63,0.45)",
           boxShadow: isActive
             ? "0 40px 100px rgba(0,0,0,0.7), 0 0 60px rgba(201,168,76,0.12)"
@@ -305,11 +310,8 @@ function HelixCard({
             className="object-cover transition-transform duration-700"
             style={{ transform: hovered ? "scale(1.08)" : "scale(1)" }}
           />
-          <div className="absolute inset-0 bg-linear-to-t from-[#0a1606]/70 to-transparent" />
-          <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-gold/20 border border-gold/40 text-gold text-[9px] font-body font-bold tracking-widest uppercase">
-            {card.tag}
-          </span>
-          <span className="absolute top-3 right-3 font-display text-gold/20 text-4xl font-bold leading-none select-none">
+          <div className="absolute inset-0 bg-linear-to-t from-[#060f08]/70 to-transparent" />
+          <span className="absolute top-3 right-3 font-display text-[#c9a84c]/20 text-4xl font-bold leading-none select-none">
             {card.num}
           </span>
           <div

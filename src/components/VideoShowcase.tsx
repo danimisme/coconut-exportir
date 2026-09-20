@@ -8,14 +8,14 @@ const VIDEOS = [
   {
     src: "/videos/splitting-coconut.mp4",
     poster: "/images/coconut-pile-1.jpg",
-    title: "Proses Membelah Kelapa",
-    desc: "Kelapa dibelah langsung di lokasi untuk memastikan kematangan dan kualitas setiap butir.",
+    title: "Coconut Splitting Process",
+    desc: "Coconuts are split on-site to verify the ripeness and quality of every nut.",
   },
   {
     src: "/videos/coconut-quality.mp4",
     poster: "/images/split-coconut-1.jpg",
-    title: "Kualitas Daging Kelapa",
-    desc: "Daging kelapa tebal, segar, dan konsisten — bukti langsung kualitas ekspor kami.",
+    title: "Coconut Flesh Quality",
+    desc: "Thick, fresh, and consistent flesh — direct proof of our export quality.",
   },
 ];
 
@@ -48,7 +48,7 @@ function AutoPlayVideo({ src, poster }: { src: string; poster: string }) {
 
 export default function VideoShowcase() {
   return (
-    <section className="bg-forest-mid h-screen flex flex-col justify-center overflow-hidden py-10">
+    <section className="bg-forest-mid min-h-screen sm:h-screen flex flex-col justify-center sm:overflow-hidden py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
         <RevealSection className="mb-10 text-center">
           <motion.span
@@ -56,15 +56,15 @@ export default function VideoShowcase() {
             custom={0}
             className="inline-block text-gold font-body text-xs font-medium tracking-[0.3em] uppercase mb-4"
           >
-            Bukti Kualitas
+            Proof of Quality
           </motion.span>
           <motion.h2
             variants={fadeUp}
             custom={1}
             className="font-display text-4xl lg:text-5xl text-cream font-semibold leading-tight"
           >
-            Lihat Langsung
-            <em className="block italic font-light text-gold">Kualitas Kelapa Kami</em>
+            Quality Verified
+            <em className="block italic font-light text-gold">at Every Step.</em>
           </motion.h2>
         </RevealSection>
 

@@ -5,22 +5,22 @@ import { motion } from "framer-motion";
 import { Counter, RevealSection, SlideFromLeft, SlideFromRight, fadeUp } from "@/lib/motion";
 
 const stats = [
-  { value: 3, suffix: "+", label: "Negara Tujuan Ekspor Aktif" },
-  { value: 40, suffix: "-ft", label: "Ukuran Container Pengiriman" },
-  { value: 2, suffix: " Term", label: "Opsi Pengiriman (CIF & FOB)" },
-  { value: 100, suffix: "%", label: "Komitmen Tepat Waktu" },
+  { value: 3, suffix: "+", label: "Active Export Destinations" },
+  { value: 40, suffix: "-ft", label: "Shipping Container Size" },
+  { value: 2, suffix: " Terms", label: "Shipping Options (CIF & FOB)" },
+  { value: 100, suffix: "%", label: "On-Time Commitment" },
 ];
 
 export default function Stats() {
   return (
     <section
       id="statistik"
-      className="relative min-h-screen flex flex-col justify-center py-20 overflow-hidden bg-forest"
+      className="relative scroll-mt-24 min-h-screen flex flex-col justify-center py-20 overflow-hidden bg-forest"
     >
       <div className="absolute inset-0">
         <Image
           src="/images/coconut-pile-3.jpg"
-          alt="Tumpukan kelapa siap ekspor"
+          alt="Pile of coconuts ready for export"
           fill
           sizes="100vw"
           className="object-cover opacity-15"
@@ -31,8 +31,8 @@ export default function Stats() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <RevealSection className="text-center mb-16">
           <motion.h2 variants={fadeUp} custom={0} className="font-display text-5xl text-cream font-semibold">
-            Komitmen Kami dalam
-            <em className="italic font-light text-gold"> Angka</em>
+            Our Commitment
+            <em className="italic font-light text-gold"> in Numbers</em>
           </motion.h2>
         </RevealSection>
 

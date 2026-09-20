@@ -6,33 +6,33 @@ import { motion } from "framer-motion";
 const advantages = [
   {
     icon: "🏆",
-    title: "Kualitas Grade Ekspor",
-    desc: "Setiap kelapa dipilih secara ketat — ukuran seragam, kondisi segar, sabut dikupas rapi sesuai standar importir internasional. Konsisten di setiap kontainer.",
+    title: "Export-Grade Quality",
+    desc: "Every coconut is strictly selected — uniform size, fresh condition, neatly husked to international importer standards. Consistent in every container.",
     dir: "left" as const,
   },
   {
     icon: "🚢",
-    title: "Term Fleksibel: CIF & FOB",
-    desc: "Kami melayani pengiriman dengan term CIF maupun FOB sesuai kebutuhan buyer. Dokumen ekspor lengkap: Phytosanitary, Certificate of Origin, B/L, dan Packing List.",
+    title: "Flexible Terms: CIF & FOB",
+    desc: "We ship with CIF or FOB terms based on buyer needs. Complete export documents: Phytosanitary Certificate, Certificate of Origin, B/L, and Packing List.",
     dir: "right" as const,
   },
   {
     icon: "🌏",
-    title: "Pengalaman Ekspor Teruji",
-    desc: "Track record pengiriman ke China, Thailand, Vietnam, dan negara Asia lainnya. Kami memahami prosedur bea cukai dan persyaratan karantina di setiap negara tujuan.",
+    title: "Proven Export Experience",
+    desc: "Not an empty claim — we've shipped to China, Thailand, and Vietnam, and understand customs procedures and quarantine requirements in each destination country.",
     dir: "left" as const,
   },
   {
     icon: "📋",
-    title: "Logistik & Dokumentasi Profesional",
-    desc: "Tim kami menangani seluruh proses dari pengadaan, fumigasi, stuffing container 40-ft, hingga pengurusan dokumen — Anda cukup terima barang tepat waktu.",
+    title: "Professional Logistics & Documentation",
+    desc: "Our team handles the entire process from sourcing, fumigation, 40-ft container stuffing, to document handling — you just receive your goods on time.",
     dir: "right" as const,
   },
 ];
 
 export default function WhyUs() {
   return (
-    <section id="keunggulan" className="bg-forest-mid min-h-screen flex flex-col justify-center py-20">
+    <section id="keunggulan" className="bg-forest-mid scroll-mt-24 min-h-screen flex flex-col justify-center py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <RevealSection className="mb-20 text-center">
           <motion.span
@@ -40,15 +40,15 @@ export default function WhyUs() {
             custom={0}
             className="inline-block text-gold font-body text-xs font-medium tracking-[0.3em] uppercase mb-4"
           >
-            Mengapa Kami
+            Why Choose Us
           </motion.span>
           <motion.h2
             variants={fadeUp}
             custom={1}
             className="font-display text-5xl lg:text-6xl text-cream font-semibold leading-tight"
           >
-            Lebih dari Sekadar
-            <em className="block italic font-light text-gold">Pemasok Kelapa</em>
+            More Than Just
+            <em className="block italic font-light text-gold">a Coconut Supplier</em>
           </motion.h2>
         </RevealSection>
 
@@ -57,7 +57,7 @@ export default function WhyUs() {
             const Slide = adv.dir === "left" ? SlideFromLeft : SlideFromRight;
             return (
               <Slide key={adv.title} distance={180}>
-                <div className="flex flex-col sm:flex-row items-start gap-6 p-8 rounded-2xl border border-leaf/40 bg-forest/40 hover:border-gold/30 transition-colors duration-500 group">
+                <div className="flex flex-col sm:flex-row items-start gap-6 p-8 rounded-2xl border border-leaf/40 bg-white hover:border-gold/30 transition-colors duration-500 group">
                   <div className="text-4xl shrink-0 w-14 h-14 rounded-full bg-forest-light flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     {adv.icon}
                   </div>
