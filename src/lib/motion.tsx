@@ -12,6 +12,18 @@ export const fadeUp = {
   }),
 };
 
+function useResponsiveDistance(distance: number, mobileCap = 32) {
+  const [value, setValue] = useState(distance);
+  useEffect(() => {
+    const mql = window.matchMedia("(max-width: 1023px)");
+    const update = () => setValue(mql.matches ? Math.min(distance, mobileCap) : distance);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, [distance, mobileCap]);
+  return value;
+}
+
 export function useHorizontalParallax(
   ref: RefObject<HTMLElement | null>,
   from: number,
@@ -97,7 +109,8 @@ export function SlideFromLeft({
   distance?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const x = useHorizontalParallax(ref, -distance);
+  const responsiveDistance = useResponsiveDistance(distance);
+  const x = useHorizontalParallax(ref, -responsiveDistance);
   const opacity = useOpacityParallax(ref);
   return (
     <motion.div ref={ref} style={{ x, opacity }} className={className}>
@@ -116,7 +129,8 @@ export function SlideFromRight({
   distance?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const x = useHorizontalParallax(ref, distance);
+  const responsiveDistance = useResponsiveDistance(distance);
+  const x = useHorizontalParallax(ref, responsiveDistance);
   const opacity = useOpacityParallax(ref);
   return (
     <motion.div ref={ref} style={{ x, opacity }} className={className}>
