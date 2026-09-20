@@ -44,3 +44,15 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #8a5f1f;
 }
+
+/* background-attachment: fixed is unreliable on mobile browsers (esp. iOS Safari) when
+   combined with position: sticky — it can inflate the element's rendered height far beyond
+   the viewport. Keep it fixed only on larger screens where it renders correctly. */
+.bg-fixed-desktop-only {
+  background-attachment: scroll;
+}
+@media (min-width: 1024px) {
+  .bg-fixed-desktop-only {
+    background-attachment: fixed;
+  }
+}

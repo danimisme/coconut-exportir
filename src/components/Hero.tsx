@@ -14,14 +14,11 @@ export default function Hero() {
     <section
       ref={ref}
       id="hero"
-      className="relative h-screen overflow-hidden"
+      className="relative h-screen overflow-hidden bg-fixed-desktop-only"
       style={{
         position: "sticky",
         top: 0,
-        backgroundImage:
-          // "url(https://images.unsplash.com/photo-1560769680-ba2f3767c785?w=1800&h=1200&fit=crop&auto=format)",
-          "url(images/bg.jpeg)",
-        backgroundAttachment: "fixed",
+        backgroundImage: "url(/images/bg.jpeg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         zIndex: 0,
