@@ -20,7 +20,7 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <SlideFromLeft distance={160} className="relative">
+          <SlideFromLeft distance={160} className="relative order-2 lg:order-1">
             <div className="relative h-130 rounded-2xl overflow-hidden bg-forest-light">
               <Image
                 src="/images/split-coconut-1.jpg"
@@ -37,10 +37,10 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="absolute -bottom-8 -right-6 bg-gold text-white rounded-2xl p-6 shadow-xl"
+              className="absolute bottom-4 right-4 sm:-bottom-8 sm:-right-6 bg-gold text-white rounded-2xl p-4 sm:p-6 shadow-xl"
             >
-              <div className="font-display text-xl font-bold leading-none">Pure Quality,</div>
-              <div className="font-body text-xs font-semibold tracking-wide mt-1 uppercase">
+              <div className="font-display text-base sm:text-xl font-bold leading-none">Pure Quality,</div>
+              <div className="font-body text-[10px] sm:text-xs font-semibold tracking-wide mt-1 uppercase">
                 Globally Trusted
               </div>
             </motion.div>
@@ -50,19 +50,19 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="absolute -top-8 -left-6 w-44 h-44 rounded-xl overflow-hidden border-4 border-white shadow-xl bg-forest-light"
+              className="absolute top-4 left-4 w-24 h-24 sm:-top-8 sm:-left-6 sm:w-44 sm:h-44 rounded-xl overflow-hidden border-4 border-white shadow-xl bg-forest-light"
             >
               <Image
                 src="/images/coconut-pile-1.jpg"
                 alt="Coconut pile"
                 fill
-                sizes="176px"
+                sizes="(min-width: 640px) 176px, 96px"
                 className="object-cover"
               />
             </motion.div>
           </SlideFromLeft>
 
-          <SlideFromRight distance={160}>
+          <SlideFromRight distance={160} className="order-1 lg:order-2">
             <div className="mb-3">
               <span className="text-gold font-body text-lg font-medium tracking-[0.3em] uppercase">
                 About Us

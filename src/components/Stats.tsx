@@ -29,26 +29,26 @@ export default function Stats() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-        <RevealSection className="text-center mb-16">
-          <motion.h2 variants={fadeUp} custom={0} className="font-display text-5xl text-cream font-semibold">
+        <RevealSection className="text-center mb-8 sm:mb-16">
+          <motion.h2 variants={fadeUp} custom={0} className="font-display text-3xl sm:text-5xl text-cream font-semibold">
             Our Commitment
             <em className="italic font-light text-gold"> in Numbers</em>
           </motion.h2>
         </RevealSection>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8">
           {stats.map((stat, i) => {
             const Slide = i < 2 ? SlideFromLeft : SlideFromRight;
             return (
               <Slide
                 key={stat.label}
                 distance={100}
-                className="text-center p-8 rounded-2xl border border-leaf/50 bg-forest-mid/40 backdrop-blur-sm hover:border-gold/40 transition-colors duration-300"
+                className="text-center p-4 sm:p-8 rounded-2xl border border-leaf/50 bg-forest-mid/40 backdrop-blur-sm hover:border-gold/40 transition-colors duration-300"
               >
-                <div className="font-display text-5xl lg:text-6xl font-bold text-gold mb-3">
+                <div className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-gold mb-1.5 sm:mb-3">
                   <Counter to={stat.value} suffix={stat.suffix} />
                 </div>
-                <div className="font-body text-cream-dim text-sm leading-tight">{stat.label}</div>
+                <div className="font-body text-cream-dim text-xs sm:text-sm leading-tight">{stat.label}</div>
               </Slide>
             );
           })}

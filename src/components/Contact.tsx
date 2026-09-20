@@ -50,7 +50,7 @@ export default function Contact() {
           <motion.h2
             variants={fadeUp}
             custom={1}
-            className="font-display text-5xl lg:text-6xl text-cream font-semibold leading-tight mb-4"
+            className="font-display text-3xl sm:text-5xl lg:text-6xl text-cream font-semibold leading-tight mb-4"
           >
             Ready to Import
             <em className="block italic font-light text-gold">Export-Quality Coconut?</em>

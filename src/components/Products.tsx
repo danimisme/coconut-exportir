@@ -19,7 +19,7 @@ const SPECS = [
 
 export default function Products() {
   return (
-    <section id="produk" className="bg-forest py-16 md:py-24">
+    <section id="produk" className="bg-forest py-16 md:py-24 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <RevealSection className="mb-16 text-center">
           <motion.span
@@ -86,10 +86,10 @@ export default function Products() {
                       custom={i * 0.5}
                       className="flex items-start gap-4 px-6 py-4"
                     >
-                      <span className="font-body text-cream-dim text-sm w-40 shrink-0">
+                      <span className="font-body text-cream-dim text-sm w-32 sm:w-40 shrink-0">
                         {spec.label}
                       </span>
-                      <span className="font-body text-cream text-sm font-medium">{spec.value}</span>
+                      <span className="font-body text-cream text-sm font-medium min-w-0 flex-1">{spec.value}</span>
                     </motion.div>
                   ))}
                 </div>
