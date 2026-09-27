@@ -43,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-6xl md:text-8xl lg:text-[96px] text-cream leading-[0.9] font-semibold max-w-5xl"
+          className="font-display text-4xl sm:text-6xl md:text-8xl lg:text-[96px] text-cream leading-[0.9] font-semibold max-w-5xl"
         >
           De Husked &
           <em className="block text-gold italic font-light">Semi Husked</em>
@@ -54,7 +54,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.85 }}
-          className="mt-8 text-cream-dim font-body text-lg max-w-2xl leading-relaxed"
+          className="mt-8 text-cream-dim font-body text-md sm:text-lg max-w-2xl leading-relaxed"
         >
           {siteConfig.name} supplies export-grade de husked & semi husked coconut
           from North Sumatra, Indonesia — trusted by buyers in China, Thailand, and Vietnam, with premium
