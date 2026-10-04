@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-display text-cream font-semibold text-sm">{siteConfig.nameShort}</div>
-                <div className="text-gold text-[9px] tracking-[0.22em] uppercase font-body">Nasional</div>
+                <div className="text-gold text-[9px] tracking-[0.22em] uppercase font-body">Internasional</div>
               </div>
             </div>
             <p className="text-cream-dim font-body text-sm leading-relaxed">
@@ -54,6 +54,7 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-3 text-cream-dim font-body text-sm">
+              <li>{siteConfig.name}</li>
               <li>📍 {siteConfig.address}</li>
               <li>
                 <a href={`mailto:${siteConfig.email}`} className="hover:text-cream-dim transition-colors">

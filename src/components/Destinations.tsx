@@ -18,7 +18,7 @@ export default function Destinations() {
     <section className="bg-forest-mid py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-10 text-center">
         <span className="text-cream-dim font-body text-xs tracking-[0.3em] uppercase">
-          Target Export Markets
+          Export Markets
         </span>
       </div>
       <div className="flex gap-10 overflow-hidden">

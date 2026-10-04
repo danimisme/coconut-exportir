@@ -32,7 +32,7 @@ export default function Products() {
           <motion.h2
             variants={fadeUp}
             custom={1}
-            className="font-display text-5xl lg:text-6xl text-cream font-semibold leading-tight"
+            className="font-display text-4xl md:text-5xl lg:text-6xl text-cream font-semibold leading-tight"
           >
             De Husked &
             <em className="block italic font-light text-gold">Semi Husked Coconut</em>
